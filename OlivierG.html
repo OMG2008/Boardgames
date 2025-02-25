@@ -36,46 +36,25 @@
             padding: 50px 20px;
             animation: fadeInUp 1s ease-in-out;
         }
-        .project-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
+        .buttons-container {
+            margin-top: 20px;
         }
-        .project {
-            background-color: #1f1f1f;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-        }
-        .skills-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .skill {
+        .btn {
             background-color: #ff9800;
-            padding: 10px;
+            color: #fff;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
             border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
         }
         footer {
             background-color: #1f1f1f;
             padding: 10px;
             margin-top: 20px;
-        }
-        form input, form textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: none;
-        }
-        form button {
-            background-color: #ff9800;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
         }
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
@@ -105,6 +84,10 @@
     <section id="home">
         <h2>Welcome to My Portfolio</h2>
         <p>Discover my work, skills, and journey.</p>
+        <div class="buttons-container">
+            <a href="#personal" class="btn">Personal Area</a>
+            <a href="#it" class="btn">IT Area</a>
+        </div>
     </section>
     
     <section id="about">
